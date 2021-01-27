@@ -1,5 +1,19 @@
 // NOTE: currently not supporting _NIS models
 
+struct ContainerHeader {
+    Int32 unknown;
+    Int16 numModels;
+    Int16 modelsListOffset;
+    UInt32 modelOffsetAddition;
+    ModelHeader[] modelsList;
+}
+
+struct ModelHeader {
+    char[16] modelName;
+    UInt32 modelOffset; // + modelOffsetAddition
+    //…
+}
+
 struct Model {
     BonePercentOffset[] bonePercentOffsets;
     BonePercent[] bonePercentList;
