@@ -11,6 +11,23 @@ struct ContainerHeader {
 struct ModelHeader {
     char[16] modelName;
     UInt32 modelOffset; // + modelOffsetAddition
+    UInt32 size; // bytes
+    UInt32 modelDataStartOffset;
+    UInt32 bonePercentOffsetOffset;
+    UInt32 unknownDataOffset;
+    UInt32 firstInternalModelOffset
+    UInt32 unknown1;
+    UInt32 bonePercentOffsetOffset2;
+    UInt32 numberListRefOffset;
+    UInt32 bonePercentOffsetOffset3;
+    UInt32 unknown2;
+    UInt32 unknown3;
+    UInt32 unknown4;
+    UInt16 bonePercentOffsetOffsetCount;
+    UInt16 internalModelCount;
+    UInt16 unknown5;
+    UInt16 boneCount;
+    UInt16 wastedSpaceBoneCount; // offset 88
     //…
 }
 
