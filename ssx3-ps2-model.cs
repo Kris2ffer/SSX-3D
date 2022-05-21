@@ -23,12 +23,20 @@ struct ModelHeader {
     UInt32 unknown2;
     UInt32 unknown3;
     UInt32 unknown4;
-    UInt16 bonePercentOffsetOffsetCount;
+    UInt16 bonePercentOffsetOffsetCount; // offset 68 // count for BonePercentOffset struct
     UInt16 internalModelCount;
     UInt16 unknown5;
     UInt16 boneCount;
-    UInt16 wastedSpaceBoneCount; // offset 88
-    //…
+    UInt16 wastedSpaceBoneCount; // offset 76
+    UInt16 unknown6;
+    UInt16 unknown7;
+    UInt16 unknown8;
+    UInt16 unknownCount9; // used, but unsure of what it does
+    UInt16 unknown10;
+    UInt16 unknown11;
+    UInt16 unknown12;
+    UInt16 unknown13;
+    UInt16 unknown14;
 }
 
 struct Model {
